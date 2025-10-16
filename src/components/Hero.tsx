@@ -35,9 +35,12 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
+                asChild
               >
-                <Play className="mr-2 h-5 w-5" />
-                Watch Live Now
+                <a href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923" target="_blank" rel="noopener noreferrer">
+                  <Play className="mr-2 h-5 w-5" />
+                  Watch Live Now
+                </a>
               </Button>
               <Button 
                 size="lg" 
@@ -51,22 +54,29 @@ const Hero = () => {
 
           {/* Live Stream Preview */}
           <div className="relative animate-fade-in delay-200">
-            <div className="aspect-video bg-gradient-to-br from-muted to-muted/50 rounded-2xl overflow-hidden shadow-strong relative group">
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform cursor-pointer">
-                    <Play className="w-8 h-8 text-primary ml-1" />
+            <a 
+              href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="aspect-video bg-gradient-to-br from-muted to-muted/50 rounded-2xl overflow-hidden shadow-strong relative group cursor-pointer">
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+                  <div className="text-center space-y-4">
+                    <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
+                      <Play className="w-8 h-8 text-primary ml-1" />
+                    </div>
+                    <p className="text-white font-medium text-lg">Click to Watch Live Stream</p>
                   </div>
-                  <p className="text-white font-medium text-lg">Click to Watch Live Stream</p>
+                </div>
+              
+                {/* Live indicator */}
+                <div className="absolute top-4 left-4 flex items-center gap-2 bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-medium">
+                  <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                  LIVE
                 </div>
               </div>
-              
-              {/* Live indicator */}
-              <div className="absolute top-4 left-4 flex items-center gap-2 bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-medium">
-                <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                LIVE
-              </div>
-            </div>
+            </a>
             
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>

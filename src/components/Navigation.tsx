@@ -36,9 +36,15 @@ const Navigation = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="default" className="bg-primary hover:bg-primary/90">
-              <Tv className="mr-2 h-4 w-4" />
-              Watch Live
+            <Button 
+              variant="default" 
+              className="bg-primary hover:bg-primary/90"
+              asChild
+            >
+              <a href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923" target="_blank" rel="noopener noreferrer">
+                <Tv className="mr-2 h-4 w-4" />
+                Watch Live
+              </a>
             </Button>
           </div>
 
@@ -66,9 +72,15 @@ const Navigation = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="default" className="bg-primary hover:bg-primary/90 w-full">
-                <Tv className="mr-2 h-4 w-4" />
-                Watch Live
+              <Button 
+                variant="default" 
+                className="bg-primary hover:bg-primary/90 w-full"
+                asChild
+              >
+                <a href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923" target="_blank" rel="noopener noreferrer">
+                  <Tv className="mr-2 h-4 w-4" />
+                  Watch Live
+                </a>
               </Button>
             </div>
           </div>
