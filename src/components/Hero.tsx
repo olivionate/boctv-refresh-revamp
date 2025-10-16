@@ -30,15 +30,15 @@ const Hero = () => {
               <span>NOW LIVE</span>
             </div>
             
-            <div className="inline-block bg-white/95 backdrop-blur-sm px-6 sm:px-8 md:px-10 py-4 sm:py-6 md:py-8 rounded-2xl shadow-strong">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight">
+            <div className="inline-block bg-gradient-to-br from-muted to-muted/50 backdrop-blur-sm px-6 sm:px-8 md:px-10 py-4 sm:py-6 md:py-8 rounded-2xl shadow-strong mx-auto lg:mx-0">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight text-center">
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   The Body of Christ TV
                 </span>
               </h1>
             </div>
             
-            <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
               Experience transformative Christian television broadcasting in Kenya. 
               Join us for inspiring worship, powerful teachings, and life-changing testimonies.
             </p>
