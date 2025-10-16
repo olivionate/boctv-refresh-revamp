@@ -48,13 +48,13 @@ const About = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden group-hover:scale-110 transition-transform">
-                    <img 
-                      src={value.image} 
-                      alt={value.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="flex-shrink-0 w-32 h-32 sm:w-40 sm:h-40 rounded-xl overflow-hidden group-hover:scale-110 transition-transform">
+                  <img 
+                    src={value.image} 
+                    alt={value.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                   <div>
                     <h3 className="text-xl sm:text-2xl font-display font-bold mb-2 sm:mb-3 group-hover:text-primary transition-colors">
                       {value.title}
