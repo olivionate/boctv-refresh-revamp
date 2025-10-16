@@ -2,6 +2,7 @@ import { Play, Radio } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
+import liveTvBg from "@/assets/live-tv-bg.jpg";
 
 const Hero = () => {
   return (
@@ -75,6 +76,11 @@ const Hero = () => {
               className="block"
             >
               <div className="aspect-video bg-gradient-to-br from-muted to-muted/50 rounded-2xl overflow-hidden shadow-strong relative group cursor-pointer">
+                <img 
+                  src={liveTvBg} 
+                  alt="Live TV Background" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
                   <div className="text-center space-y-4">
                     <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
