@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Twitter, Youtube, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, X, Youtube, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -70,7 +70,7 @@ const Contact = () => {
               <div className="flex gap-4">
                 {[
                   { icon: Facebook, label: "Facebook", url: "https://www.facebook.com/BodyofChristTV" },
-                  { icon: Twitter, label: "Twitter", url: "#" },
+                  { icon: X, label: "X", url: "https://x.com/boctvKE" },
                   { icon: Youtube, label: "YouTube", url: "#" },
                   { icon: Instagram, label: "Instagram", url: "#" }
                 ].map((social, index) => {
