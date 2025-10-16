@@ -19,17 +19,17 @@ const LiveTV = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="rounded-2xl overflow-hidden shadow-strong bg-black relative" style={{ paddingBottom: 'calc(56.25%)', position: 'relative', width: '100%' }}>
+          <div className="rounded-2xl overflow-hidden shadow-strong relative" style={{ paddingBottom: 'calc(56.25%)', position: 'relative', width: '100%' }}>
+            {/* Background Image */}
             <img 
               src={liveTvBg} 
               alt="Live TV Background" 
               className="absolute inset-0 w-full h-full object-cover"
             />
+            {/* Iframe overlay */}
             <iframe
-              style={{ position: 'absolute', left: 0, top: 0, bottom: 0, right: 0, height: '100%', width: '100%' }}
+              className="absolute inset-0 w-full h-full z-10"
               src="https://cdn.bamboo-video.com/api/embed?id=61efe2df06304441f316f923&uiconf_id=11688057&type=channel&iid=61efe2ac0630444d570f7b23&newPlayer=true"
-              width="100%"
-              height="100%"
               allow="autoplay *; fullscreen *; encrypted-media *"
               allowFullScreen
               frameBorder="0"
