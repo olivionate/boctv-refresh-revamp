@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <img src={logo} alt="BOC TV Logo" className="h-12 w-auto" />
+            <img src={logo} alt="BOC TV Logo" className="h-36 w-auto" />
             <p className="text-sm text-muted-foreground">
               One Body, United in Christ. Spreading the Gospel through quality Christian television.
             </p>
