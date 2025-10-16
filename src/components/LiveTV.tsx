@@ -2,17 +2,17 @@ import { Radio } from "lucide-react";
 
 const LiveTV = () => {
   return (
-    <section id="live" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-full text-sm font-medium mb-4">
-            <Radio className="w-4 h-4 animate-pulse" />
+    <section id="live" className="py-12 sm:py-16 md:py-20 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-red-600 text-white rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4">
+            <Radio className="w-3 h-3 sm:w-4 sm:h-4 animate-pulse" />
             <span>NOW LIVE</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-3 sm:mb-4">
             Watch Live Stream
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto px-4">
             Join us for live worship, teachings, and inspiring testimonies
           </p>
         </div>

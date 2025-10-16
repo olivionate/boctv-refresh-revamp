@@ -6,12 +6,12 @@ const Footer = () => {
 
   return (
     <footer className="bg-muted/50 border-t border-border">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Brand */}
-          <div className="space-y-4">
-            <img src={logo} alt="BOC TV Logo" className="h-36 w-auto" />
-            <p className="text-sm text-muted-foreground">
+          <div className="space-y-3 sm:space-y-4 text-center sm:text-left">
+            <img src={logo} alt="BOC TV Logo" className="h-24 sm:h-32 md:h-36 w-auto mx-auto sm:mx-0" />
+            <p className="text-xs sm:text-sm text-muted-foreground">
               One Body, United in Christ. Spreading the Gospel through quality Christian television.
             </p>
           </div>
@@ -56,12 +56,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+        <div className="border-t border-border pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
           <p>
             © {currentYear} BOC TV. All rights reserved.
           </p>
           <p className="flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> for the Body of Christ
+            Made with <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-primary fill-primary" /> for the Body of Christ
           </p>
         </div>
       </div>

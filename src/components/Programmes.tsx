@@ -60,13 +60,13 @@ const programmes = [
 
 const Programmes = () => {
   return (
-    <section id="programmes" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
+    <section id="programmes" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-3 sm:mb-4">
             Our <span className="text-primary">Programmes</span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-4">
             Inspiring content designed to strengthen your faith, encourage your spirit, 
             and connect you with God's purpose for your life
           </p>

@@ -10,42 +10,42 @@ const Hero = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="container mx-auto px-4 pt-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 pt-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
-          <div className="text-center lg:text-left space-y-6 animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium">
-              <Radio className="w-4 h-4 animate-pulse" />
+          <div className="text-center lg:text-left space-y-4 sm:space-y-6 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/10 rounded-full text-primary text-xs sm:text-sm font-medium">
+              <Radio className="w-3 h-3 sm:w-4 sm:h-4 animate-pulse" />
               <span>NOW LIVE</span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight">
               One Body,
               <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 United in Christ
               </span>
             </h1>
             
-            <p className="text-xl text-muted-foreground max-w-2xl">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
               Experience transformative Christian television broadcasting in Kenya. 
               Join us for inspiring worship, powerful teachings, and life-changing testimonies.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2 sm:pt-4">
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
+                className="bg-primary hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto"
                 asChild
               >
                 <a href="#live">
-                  <Play className="mr-2 h-5 w-5" />
+                  <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                   Live TV
                 </a>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline"
-                className="text-lg px-8 py-6 border-2"
+                className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 w-full sm:w-auto"
               >
                 Explore Programmes
               </Button>
