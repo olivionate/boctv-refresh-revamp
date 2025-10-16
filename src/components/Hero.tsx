@@ -37,9 +37,9 @@ const Hero = () => {
                 className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
                 asChild
               >
-                <a href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923" target="_blank" rel="noopener noreferrer">
+                <a href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923">
                   <Play className="mr-2 h-5 w-5" />
-                  Watch Live Now
+                  Live TV
                 </a>
               </Button>
               <Button 
@@ -55,9 +55,7 @@ const Hero = () => {
           {/* Live Stream Preview */}
           <div className="relative animate-fade-in delay-200">
             <a 
-              href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923"
               className="block"
             >
               <div className="aspect-video bg-gradient-to-br from-muted to-muted/50 rounded-2xl overflow-hidden shadow-strong relative group cursor-pointer">
@@ -66,7 +64,7 @@ const Hero = () => {
                     <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
                       <Play className="w-8 h-8 text-primary ml-1" />
                     </div>
-                    <p className="text-white font-medium text-lg">Click to Watch Live Stream</p>
+                    <p className="text-white font-medium text-lg">Live TV</p>
                   </div>
                 </div>
               
