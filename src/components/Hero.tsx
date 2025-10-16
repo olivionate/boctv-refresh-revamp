@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight text-center text-white">
-              The Body of Christ TV
+              The Body of<br />Christ TV
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
