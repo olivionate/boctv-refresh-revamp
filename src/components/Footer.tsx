@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-3 sm:space-y-4 text-center sm:text-left">
             <img src={logo} alt="BOC TV Logo" className="h-24 sm:h-32 md:h-36 w-auto mx-auto sm:mx-0" />
             <p className="text-xs sm:text-sm text-muted-foreground">
-              One Body, United in Christ. Spreading the Gospel through quality Christian television.
+              The Body of Christ TV, One Body, United in Christ. Spreading the Gospel through quality Christian television.
             </p>
           </div>
 
