@@ -1,5 +1,6 @@
 import { Play, Radio } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -49,10 +50,10 @@ const Hero = () => {
                 className="bg-primary hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto"
                 asChild
               >
-                <a href="#live">
+                <Link to="/live-tv">
                   <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                   Live TV
-                </a>
+                </Link>
               </Button>
               <Button 
                 size="lg" 
@@ -60,17 +61,17 @@ const Hero = () => {
                 className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 w-full sm:w-auto"
                 asChild
               >
-                <a href="#programmes">
+                <Link to="/programmes">
                   Explore Programmes
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
 
           {/* Live Stream Preview */}
           <div className="relative animate-fade-in delay-200">
-            <a 
-              href="#live"
+            <Link 
+              to="/live-tv"
               className="block"
             >
               <div className="aspect-video bg-gradient-to-br from-muted to-muted/50 rounded-2xl overflow-hidden shadow-strong relative group cursor-pointer">
@@ -89,7 +90,7 @@ const Hero = () => {
                   LIVE
                 </div>
               </div>
-            </a>
+            </Link>
             
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>

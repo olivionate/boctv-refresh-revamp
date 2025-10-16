@@ -9,11 +9,11 @@ const Navigation = () => {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "#about" },
-    { name: "Live TV", href: "#live" },
-    { name: "Programmes", href: "#programmes" },
-    { name: "Partnership", href: "#partnership" },
-    { name: "Contact", href: "#contact" },
+    { name: "About Us", href: "/about" },
+    { name: "Live TV", href: "/live-tv" },
+    { name: "Programmes", href: "/programmes" },
+    { name: "Partnership", href: "/partnership" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -41,10 +41,10 @@ const Navigation = () => {
               className="bg-primary hover:bg-primary/90"
               asChild
             >
-              <a href="#live">
+              <Link to="/live-tv">
                 <Tv className="mr-2 h-4 w-4" />
                 Live TV
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -77,10 +77,10 @@ const Navigation = () => {
                 className="bg-primary hover:bg-primary/90 w-full"
                 asChild
               >
-                <a href="#live">
+                <Link to="/live-tv">
                   <Tv className="mr-2 h-4 w-4" />
                   Live TV
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
