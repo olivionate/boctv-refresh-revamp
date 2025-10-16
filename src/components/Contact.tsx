@@ -69,16 +69,18 @@ const Contact = () => {
               <h3 className="text-2xl font-display font-bold mb-6">Follow Us</h3>
               <div className="flex gap-4">
                 {[
-                  { icon: Facebook, label: "Facebook" },
-                  { icon: Twitter, label: "Twitter" },
-                  { icon: Youtube, label: "YouTube" },
-                  { icon: Instagram, label: "Instagram" }
+                  { icon: Facebook, label: "Facebook", url: "https://www.facebook.com/BodyofChristTV" },
+                  { icon: Twitter, label: "Twitter", url: "#" },
+                  { icon: Youtube, label: "YouTube", url: "#" },
+                  { icon: Instagram, label: "Instagram", url: "#" }
                 ].map((social, index) => {
                   const Icon = social.icon;
                   return (
                     <a
                       key={index}
-                      href="#"
+                      href={social.url}
+                      target={social.url !== "#" ? "_blank" : undefined}
+                      rel={social.url !== "#" ? "noopener noreferrer" : undefined}
                       className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white hover:scale-110 transition-transform"
                       aria-label={social.label}
                     >
