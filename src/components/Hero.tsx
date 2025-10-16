@@ -58,8 +58,11 @@ const Hero = () => {
                 size="lg" 
                 variant="outline"
                 className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 w-full sm:w-auto"
+                asChild
               >
-                Explore Programmes
+                <a href="#programmes">
+                  Explore Programmes
+                </a>
               </Button>
             </div>
           </div>
