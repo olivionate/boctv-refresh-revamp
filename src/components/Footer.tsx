@@ -20,13 +20,31 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              {["About Us", "Live TV", "Programmes", "Partnership"].map((link) => (
-                <li key={link}>
-                  <a href={`#${link.toLowerCase().replace(/\s+/g, '-')}`} className="text-muted-foreground hover:text-primary transition-colors">
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#live-tv" className="text-muted-foreground hover:text-primary transition-colors">
+                  Live TV
+                </a>
+              </li>
+              <li>
+                <a href="#programmes" className="text-muted-foreground hover:text-primary transition-colors">
+                  Programmes
+                </a>
+              </li>
+              <li>
+                <a href="#partnership" className="text-muted-foreground hover:text-primary transition-colors">
+                  Partnership
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
