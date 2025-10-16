@@ -1,5 +1,5 @@
 import { Radio } from "lucide-react";
-import liveTvBg from "@/assets/live-tv-bg.jpg";
+import liveTvBg from "@/assets/live-tv-background.jpg";
 
 const LiveTV = () => {
   return (

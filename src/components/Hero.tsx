@@ -2,7 +2,7 @@ import { Play, Radio } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
-import liveTvBg from "@/assets/live-tv-bg.jpg";
+import liveTvBg from "@/assets/live-tv-background.jpg";
 
 const Hero = () => {
   return (
@@ -75,13 +75,15 @@ const Hero = () => {
               to="/live-tv"
               className="block"
             >
-              <div className="aspect-video bg-gradient-to-br from-muted to-muted/50 rounded-2xl overflow-hidden shadow-strong relative group cursor-pointer">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-strong relative group cursor-pointer">
+                {/* Background Image */}
                 <img 
                   src={liveTvBg} 
-                  alt="Live TV Background" 
-                  className="absolute inset-0 w-full h-full object-cover"
+                  alt="BOC TV Live Stream Preview" 
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+                {/* Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/50 transition-colors">
                   <div className="text-center space-y-4">
                     <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
                       <Play className="w-8 h-8 text-primary ml-1" />
@@ -91,7 +93,7 @@ const Hero = () => {
                 </div>
               
                 {/* Live indicator */}
-                <div className="absolute top-4 left-4 flex items-center gap-2 bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-medium">
+                <div className="absolute top-4 left-4 flex items-center gap-2 bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-medium z-10">
                   <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                   LIVE
                 </div>
