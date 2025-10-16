@@ -1,23 +1,26 @@
-import { Heart, Users, Zap, Gift } from "lucide-react";
+import { Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import prayerPartnerImg from "@/assets/partnership/prayer-partner.jpg";
+import ministryPartnerImg from "@/assets/partnership/ministry-partner.jpg";
+import impactPartnerImg from "@/assets/partnership/impact-partner.jpg";
 
 const partnershipTiers = [
   {
-    icon: Heart,
+    image: prayerPartnerImg,
     title: "Prayer Partner",
     description: "Join our prayer team and support BOC TV through intercession",
     benefits: ["Weekly prayer updates", "Special prayer meetings", "Ministry updates"]
   },
   {
-    icon: Users,
+    image: ministryPartnerImg,
     title: "Ministry Partner",
     description: "Support our mission with regular monthly contributions",
     benefits: ["Exclusive content access", "Partner events", "Impact reports"]
   },
   {
-    icon: Zap,
+    image: impactPartnerImg,
     title: "Impact Partner",
     description: "Make a significant impact through major support",
     benefits: ["Leadership meetings", "Strategic planning input", "VIP events"]
@@ -43,17 +46,20 @@ const Partnership = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {partnershipTiers.map((tier, index) => {
-            const Icon = tier.icon;
             return (
               <Card 
                 key={index}
-                className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary/50 animate-fade-in"
+                className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary/50 animate-fade-in overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
+                <div className="w-full h-48 overflow-hidden">
+                  <img 
+                    src={tier.image} 
+                    alt={tier.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
                   <h3 className="text-2xl font-display font-bold mb-3 group-hover:text-primary transition-colors">
                     {tier.title}
                   </h3>
