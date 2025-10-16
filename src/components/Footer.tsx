@@ -26,7 +26,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#live-tv" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/live-tv" className="text-muted-foreground hover:text-primary transition-colors">
                   Live TV
                 </a>
               </li>
