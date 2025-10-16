@@ -30,8 +30,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Our Location</h4>
                     <p className="text-muted-foreground">
-                      P.O Box 2097 – 00621<br />
-                      Village Market – Nairobi, Kenya
+                      The Body of Christ TV,<br />
+                      5th Floor, TRV Plaza, Westlands,<br />
+                      P.O. Box 2097 - 00621,<br />
+                      Village Market - Nairobi, Kenya
                     </p>
                   </div>
                 </div>
