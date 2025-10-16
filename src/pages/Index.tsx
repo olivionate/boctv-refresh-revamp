@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import LiveTV from "@/components/LiveTV";
 import About from "@/components/About";
 import Programmes from "@/components/Programmes";
 import Partnership from "@/components/Partnership";
@@ -11,7 +12,8 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <main>
-        <Hero />
+      <Hero />
+      <LiveTV />
         <About />
         <Programmes />
         <Partnership />

@@ -37,7 +37,7 @@ const Hero = () => {
                 className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
                 asChild
               >
-                <a href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923">
+                <a href="#live">
                   <Play className="mr-2 h-5 w-5" />
                   Live TV
                 </a>
@@ -55,7 +55,7 @@ const Hero = () => {
           {/* Live Stream Preview */}
           <div className="relative animate-fade-in delay-200">
             <a 
-              href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923"
+              href="#live"
               className="block"
             >
               <div className="aspect-video bg-gradient-to-br from-muted to-muted/50 rounded-2xl overflow-hidden shadow-strong relative group cursor-pointer">

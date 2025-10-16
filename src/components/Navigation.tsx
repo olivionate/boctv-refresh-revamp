@@ -41,7 +41,7 @@ const Navigation = () => {
               className="bg-primary hover:bg-primary/90"
               asChild
             >
-              <a href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923">
+              <a href="#live">
                 <Tv className="mr-2 h-4 w-4" />
                 Live TV
               </a>
@@ -77,7 +77,7 @@ const Navigation = () => {
                 className="bg-primary hover:bg-primary/90 w-full"
                 asChild
               >
-                <a href="https://7936.bamboo-video.com/channel/ChefTube/The%20Body%20of%20Christ%20TV/61efe2df06304441f316f923">
+                <a href="#live">
                   <Tv className="mr-2 h-4 w-4" />
                   Live TV
                 </a>
