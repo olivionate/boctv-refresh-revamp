@@ -1,23 +1,26 @@
-import { Target, Eye, Heart, Users } from "lucide-react";
+import missionImg from "@/assets/mission.jpg";
+import visionImg from "@/assets/vision.jpg";
+import globalReachImg from "@/assets/global-reach.jpg";
+import communityImg from "@/assets/community.jpg";
 
 const values = [
   {
-    icon: Target,
+    image: missionImg,
     title: "Our Mission",
     description: "To impact the Body of Christ for growth and development in unity, doctrine, knowledge of scriptures and a firm relationship with Jesus Christ who is our Lord and Savior."
   },
   {
-    icon: Eye,
+    image: visionImg,
     title: "Our Vision",
     description: "To provide Christ-centered programming that edifies and equips the entire Body of Christ to be functional and effective in these last days of Revival and the End Times."
   },
   {
-    icon: Heart,
+    image: globalReachImg,
     title: "Global Reach",
     description: "Broadcasting in English from Nairobi, Kenya with affiliations and partnerships from major Christian entities drawn from around the globe."
   },
   {
-    icon: Users,
+    image: communityImg,
     title: "Our Community",
     description: "An independent Christian broadcasting station dedicated to preparing the Bride for Christ through the Meat of the Word of God."
   }
@@ -38,16 +41,19 @@ const About = () => {
 
         <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {values.map((value, index) => {
-            const Icon = value.icon;
             return (
               <div 
                 key={index}
-                className="group p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-card to-muted/30 border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-medium animate-fade-in"
+                className="group p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-card to-muted/30 border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-medium animate-fade-in overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden group-hover:scale-110 transition-transform">
+                    <img 
+                      src={value.image} 
+                      alt={value.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <h3 className="text-xl sm:text-2xl font-display font-bold mb-2 sm:mb-3 group-hover:text-primary transition-colors">
