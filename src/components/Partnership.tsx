@@ -1,6 +1,7 @@
 import { Heart, Users, Zap, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const partnershipTiers = [
   {
@@ -67,8 +68,8 @@ const Partnership = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-colors">
-                    Learn More
+                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-colors" asChild>
+                    <Link to="/contact">Learn More</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -85,11 +86,11 @@ const Partnership = () => {
             Call us on +254 721 658 788 or email info@boctv.co.ke
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 px-6 sm:px-8 w-full sm:w-auto">
-              Give Now
+            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 px-6 sm:px-8 w-full sm:w-auto" asChild>
+              <Link to="/contact">Give Now</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-6 sm:px-8 w-full sm:w-auto">
-              Learn About Impact
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-6 sm:px-8 w-full sm:w-auto" asChild>
+              <Link to="/contact">Learn About Impact</Link>
             </Button>
           </div>
         </div>
