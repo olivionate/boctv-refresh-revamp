@@ -4,22 +4,22 @@ const values = [
   {
     icon: Target,
     title: "Our Mission",
-    description: "To spread the Gospel of Jesus Christ through quality Christian programming that inspires, educates, and transforms lives across Kenya and beyond."
+    description: "To impact the Body of Christ for growth and development in unity, doctrine, knowledge of scriptures and a firm relationship with Jesus Christ who is our Lord and Savior."
   },
   {
     icon: Eye,
     title: "Our Vision",
-    description: "To be the leading Christian television network in East Africa, bringing unity to the Body of Christ and impacting millions with the message of hope."
+    description: "To provide Christ-centered programming that edifies and equips the entire Body of Christ to be functional and effective in these last days of Revival and the End Times."
   },
   {
     icon: Heart,
-    title: "Our Values",
-    description: "Faith, Excellence, Integrity, Unity, and Compassion guide everything we do as we serve the Body of Christ with passion and dedication."
+    title: "Global Reach",
+    description: "Broadcasting in English from Nairobi, Kenya with affiliations and partnerships from major Christian entities drawn from around the globe."
   },
   {
     icon: Users,
     title: "Our Community",
-    description: "Building a vibrant community of believers united in Christ, supporting one another, and working together to advance God's kingdom on earth."
+    description: "An independent Christian broadcasting station dedicated to preparing the Bride for Christ through the Meat of the Word of God."
   }
 ];
 
@@ -32,8 +32,7 @@ const About = () => {
             About <span className="text-secondary">BOC TV</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-4">
-            The Body of Christ Television (BOC TV) is a Christian broadcasting ministry 
-            dedicated to sharing the Gospel and bringing believers together in faith
+            The Body of Christ TV is a global Christian Broadcasting television station whose aim is to impact the Body of Christ for growth and development in unity, doctrine, knowledge of scriptures and a firm relationship with Jesus Christ. Broadcasting from Nairobi, Kenya with partnerships from major Christian entities around the globe.
           </p>
         </div>
 

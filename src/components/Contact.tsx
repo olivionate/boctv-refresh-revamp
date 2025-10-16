@@ -30,8 +30,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Our Location</h4>
                     <p className="text-muted-foreground">
-                      Nairobi, Kenya<br />
-                      Broadcasting to East Africa
+                      P.O Box 2097 – 00621<br />
+                      Village Market – Nairobi, Kenya
                     </p>
                   </div>
                 </div>
@@ -43,7 +43,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
                     <p className="text-muted-foreground">
-                      +254 (0) 700 000 000
+                      +254 736 325 788<br />
+                      +254 721 658 788
                     </p>
                   </div>
                 </div>

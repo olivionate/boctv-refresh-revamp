@@ -48,8 +48,9 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Nairobi, Kenya</li>
-              <li>+254 (0) 700 000 000</li>
+              <li>P.O Box 2097 – 00621</li>
+              <li>Village Market – Nairobi, Kenya</li>
+              <li>+254 736 325 788 / +254 721 658 788</li>
               <li>info@boctv.co.ke</li>
             </ul>
           </div>

@@ -3,58 +3,58 @@ import { Tv, Heart, BookOpen, Music, Users, Cross, Mic, MapPin, Coffee } from "l
 
 const programmes = [
   {
-    title: "Impact Documentary",
-    description: "Real stories of faith transforming lives across Kenya and beyond",
-    icon: Tv,
-    time: "Monday 8:00 PM"
-  },
-  {
-    title: "The Great Revival",
-    description: "Experience powerful revival services and spiritual awakening",
-    icon: Cross,
-    time: "Wednesday 7:30 PM"
-  },
-  {
-    title: "The Testimony Room",
-    description: "Witness miraculous testimonies of God's faithfulness",
-    icon: Mic,
-    time: "Thursday 9:00 PM"
-  },
-  {
-    title: "The Bread of Life",
-    description: "Deep biblical teaching for spiritual nourishment",
-    icon: BookOpen,
-    time: "Tuesday 6:00 PM"
-  },
-  {
-    title: "The Sacrifice of Praise",
-    description: "Contemporary worship and praise celebration",
-    icon: Music,
-    time: "Sunday 5:00 PM"
-  },
-  {
-    title: "The Heart of Worship",
-    description: "Intimate worship sessions and prayer moments",
-    icon: Heart,
-    time: "Friday 7:00 PM"
-  },
-  {
-    title: "Bible Exposition",
-    description: "Verse-by-verse exploration of Scripture",
-    icon: BookOpen,
-    time: "Saturday 3:00 PM"
+    title: "The Minister's Brook",
+    description: "A flagship programme to grow, develop, sharpen and nourish the Ministers of the Gospel, preparing the Bride for Christ",
+    icon: Coffee,
+    time: "Saturday 6:00 PM"
   },
   {
     title: "Monumental Crossroads",
-    description: "Addressing life's crucial decisions with biblical wisdom",
+    description: "In-depth analysis of challenging doctrinal differences and controversies affecting the Church worldwide",
     icon: MapPin,
     time: "Wednesday 8:30 PM"
   },
   {
-    title: "The Minister's Brook",
-    description: "Refreshing conversations with ministry leaders",
-    icon: Coffee,
-    time: "Saturday 6:00 PM"
+    title: "Bible Exposition",
+    description: "Eye-opening Bible study sessions from churches across the globe, thoroughly vetted for scriptural accuracy",
+    icon: BookOpen,
+    time: "Saturday 3:00 PM"
+  },
+  {
+    title: "The Heart of Worship",
+    description: "Intimate worship sessions and prayer moments to deepen your relationship with God",
+    icon: Heart,
+    time: "Friday 7:00 PM"
+  },
+  {
+    title: "The Sacrifice of Praise",
+    description: "Powerful praise songs from music ministers worldwide - put on your dancing shoes and dance for the Lord",
+    icon: Music,
+    time: "Sunday 5:00 PM"
+  },
+  {
+    title: "The Bread of Life",
+    description: "Rhema Word from ministers of the Gospel, thoroughly vetted to ensure it edifies the church",
+    icon: BookOpen,
+    time: "Tuesday 6:00 PM"
+  },
+  {
+    title: "The Testimony Room",
+    description: "Witness how brethren triumph through afflictions by God's grace - inspiring testimonies of victory",
+    icon: Mic,
+    time: "Thursday 9:00 PM"
+  },
+  {
+    title: "The Great Revival",
+    description: "Detailed encounters of the End-Time Revival stirring among nations, from old days to now",
+    icon: Cross,
+    time: "Wednesday 7:30 PM"
+  },
+  {
+    title: "Impact Documentary",
+    description: "Historical and educational documentaries about the church and the Body of Christ at large",
+    icon: Tv,
+    time: "Monday 8:00 PM"
   }
 ];
 
@@ -67,8 +67,7 @@ const Programmes = () => {
             Our <span className="text-primary">Programmes</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-4">
-            Inspiring content designed to strengthen your faith, encourage your spirit, 
-            and connect you with God's purpose for your life
+            Our programming is dynamic and Christ-centered, drawing from the Word of God. We feature Christian documentaries, testimonies, and inspiring stories of conquest through our Lord Jesus Christ.
           </p>
         </div>
 

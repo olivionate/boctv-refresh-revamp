@@ -36,8 +36,7 @@ const Partnership = () => {
             Join Our <span className="text-primary">Kingdom Mission</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-4">
-            Your partnership enables us to reach more souls with the Gospel and produce 
-            life-transforming Christian content across Kenya and East Africa
+            Partner with The Body of Christ TV to reach people wherever they are and on whatever device they are using, touching lives with the Good News of Jesus Christ. Your partnership has the power to change a life! Will you stand with us as a Media Missionary?
           </p>
         </div>
 
@@ -79,10 +78,11 @@ const Partnership = () => {
 
         <div className="max-w-4xl mx-auto bg-gradient-to-r from-primary to-secondary rounded-2xl p-6 sm:p-8 md:p-12 text-white text-center animate-fade-in" style={{ animationDelay: '300ms' }}>
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mb-3 sm:mb-4">
-            Make a One-Time Gift
+            Make a Donation
           </h3>
           <p className="text-base sm:text-lg mb-6 sm:mb-8 text-white/90 px-4">
-            Every contribution, no matter the size, makes a difference in spreading the Gospel
+            "A gift opens the way and ushers the giver into the presence of the great." - Proverbs 18:16<br />
+            Call us on +254 721 658 788 or email info@boctv.co.ke
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 px-6 sm:px-8 w-full sm:w-auto">
