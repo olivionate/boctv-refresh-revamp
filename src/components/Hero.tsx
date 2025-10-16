@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left space-y-4 sm:space-y-6 animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/10 rounded-full text-primary text-xs sm:text-sm font-medium">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/10 rounded-full text-white text-xs sm:text-sm font-medium">
               <Radio className="w-3 h-3 sm:w-4 sm:h-4 animate-pulse" />
               <span>NOW LIVE</span>
             </div>
