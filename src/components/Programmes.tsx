@@ -1,59 +1,67 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tv, Heart, BookOpen, Music, Users, Cross, Mic, MapPin, Coffee } from "lucide-react";
+import ministersBrookImg from "@/assets/programmes/ministers-brook.jpg";
+import monumentalCrossroadsImg from "@/assets/programmes/monumental-crossroads.jpg";
+import bibleExpositionImg from "@/assets/programmes/bible-exposition.jpg";
+import heartOfWorshipImg from "@/assets/programmes/heart-of-worship.jpg";
+import sacrificeOfPraiseImg from "@/assets/programmes/sacrifice-of-praise.jpg";
+import breadOfLifeImg from "@/assets/programmes/bread-of-life.jpg";
+import testimonyRoomImg from "@/assets/programmes/testimony-room.jpg";
+import greatRevivalImg from "@/assets/programmes/great-revival.jpg";
+import impactDocumentaryImg from "@/assets/programmes/impact-documentary.jpg";
 
 const programmes = [
   {
     title: "The Minister's Brook",
     description: "A flagship programme to grow, develop, sharpen and nourish the Ministers of the Gospel, preparing the Bride for Christ",
-    icon: Coffee,
+    image: ministersBrookImg,
     time: "Saturday 6:00 PM"
   },
   {
     title: "Monumental Crossroads",
     description: "In-depth analysis of challenging doctrinal differences and controversies affecting the Church worldwide",
-    icon: MapPin,
+    image: monumentalCrossroadsImg,
     time: "Wednesday 8:30 PM"
   },
   {
     title: "Bible Exposition",
     description: "Eye-opening Bible study sessions from churches across the globe, thoroughly vetted for scriptural accuracy",
-    icon: BookOpen,
+    image: bibleExpositionImg,
     time: "Saturday 3:00 PM"
   },
   {
     title: "The Heart of Worship",
     description: "Intimate worship sessions and prayer moments to deepen your relationship with God",
-    icon: Heart,
+    image: heartOfWorshipImg,
     time: "Friday 7:00 PM"
   },
   {
     title: "The Sacrifice of Praise",
     description: "Powerful praise songs from music ministers worldwide - put on your dancing shoes and dance for the Lord",
-    icon: Music,
+    image: sacrificeOfPraiseImg,
     time: "Sunday 5:00 PM"
   },
   {
     title: "The Bread of Life",
     description: "Rhema Word from ministers of the Gospel, thoroughly vetted to ensure it edifies the church",
-    icon: BookOpen,
+    image: breadOfLifeImg,
     time: "Tuesday 6:00 PM"
   },
   {
     title: "The Testimony Room",
     description: "Witness how brethren triumph through afflictions by God's grace - inspiring testimonies of victory",
-    icon: Mic,
+    image: testimonyRoomImg,
     time: "Thursday 9:00 PM"
   },
   {
     title: "The Great Revival",
     description: "Detailed encounters of the End-Time Revival stirring among nations, from old days to now",
-    icon: Cross,
+    image: greatRevivalImg,
     time: "Wednesday 7:30 PM"
   },
   {
     title: "Impact Documentary",
     description: "Historical and educational documentaries about the church and the Body of Christ at large",
-    icon: Tv,
+    image: impactDocumentaryImg,
     time: "Monday 8:00 PM"
   }
 ];
@@ -73,17 +81,20 @@ const Programmes = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {programmes.map((programme, index) => {
-            const Icon = programme.icon;
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-card border-border/50 animate-fade-in"
+                className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-card border-border/50 animate-fade-in overflow-hidden"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
+                <div className="w-full h-48 overflow-hidden">
+                  <img 
+                    src={programme.image} 
+                    alt={programme.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Icon className="w-6 h-6 text-white" />
-                  </div>
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">
                     {programme.title}
                   </CardTitle>
