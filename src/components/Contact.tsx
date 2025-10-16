@@ -71,7 +71,7 @@ const Contact = () => {
                 {[
                   { icon: Facebook, label: "Facebook", url: "https://www.facebook.com/BodyofChristTV" },
                   { icon: X, label: "X", url: "https://x.com/boctvKE" },
-                  { icon: Youtube, label: "YouTube", url: "#" },
+                  { icon: Youtube, label: "YouTube", url: "https://www.youtube.com/@thebodyofchristTVke" },
                   { icon: Instagram, label: "Instagram", url: "#" }
                 ].map((social, index) => {
                   const Icon = social.icon;
