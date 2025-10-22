@@ -28,13 +28,13 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <Button 
               variant="default" 
@@ -63,14 +63,14 @@ const Navigation = () => {
           <div className="lg:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
+                  to={link.href}
                   onClick={() => setIsOpen(false)}
                   className="text-foreground/80 hover:text-primary font-medium transition-colors py-2"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
               <Button 
                 variant="default" 

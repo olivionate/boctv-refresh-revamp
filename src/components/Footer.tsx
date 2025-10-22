@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/boc-logo.png";
 
 const Footer = () => {
@@ -21,29 +22,29 @@ const Footer = () => {
             <h4 className="font-display font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/live-tv" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/live-tv" className="text-muted-foreground hover:text-primary transition-colors">
                   Live TV
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#programmes" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/programmes" className="text-muted-foreground hover:text-primary transition-colors">
                   Programmes
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#partnership" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/partnership" className="text-muted-foreground hover:text-primary transition-colors">
                   Partnership
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -54,9 +55,9 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               {["Impact Documentary", "The Great Revival", "The Testimony Room", "Bible Exposition"].map((show) => (
                 <li key={show}>
-                  <a href="#programmes" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/programmes" className="text-muted-foreground hover:text-primary transition-colors">
                     {show}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
