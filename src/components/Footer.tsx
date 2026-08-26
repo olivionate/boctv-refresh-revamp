@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Brand */}
           <div className="space-y-3 sm:space-y-4 text-center sm:text-left">
-            <img src={logo} alt="BOC TV Logo" className="h-30 sm:h-40 md:h-45 w-auto mx-auto sm:mx-0" />
+            <img src={logo} alt="BOC TV Logo" className="h-auto w-40 sm:w-48 max-w-full object-contain mx-auto sm:mx-0" />
             <p className="text-xs sm:text-sm text-muted-foreground">
               The Body of Christ TV: One Body, United in Christ. Spreading the Gospel through quality Christian television.
             </p>
