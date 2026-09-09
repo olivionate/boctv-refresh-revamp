@@ -1,7 +1,23 @@
+import { useEffect, useRef } from "react";
 import { Radio } from "lucide-react";
 import liveTvBg from "@/assets/live-tv-background.jpg";
 
 const LiveTV = () => {
+  const playerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const container = playerRef.current;
+    if (!container) return;
+    container.innerHTML = "";
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.bamboo-cloud.com/api/embed2?id=61efe2df06304441f316f923&uiconf_id=11709188&type=channel&newPlayer=true&iid=61efe2ac0630444d570f7b23";
+    script.async = true;
+    container.appendChild(script);
+    return () => {
+      container.innerHTML = "";
+    };
+  }, []);
   return (
     <section id="live" className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6">
