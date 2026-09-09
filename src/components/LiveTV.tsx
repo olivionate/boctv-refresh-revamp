@@ -29,7 +29,7 @@ const LiveTV = () => {
             {/* Iframe overlay */}
             <iframe
               className="absolute inset-0 w-full h-full z-10"
-              src="https://cdn.bamboo-video.com/api/embed?id=61efe2df06304441f316f923&uiconf_id=11688057&type=channel&iid=61efe2ac0630444d570f7b23&newPlayer=true"
+              src="https://cdn.bamboo-cloud.com/api/embed?id=61efe2df06304441f316f923&uiconf_id=11709188&type=channel&iid=61efe2ac0630444d570f7b23&newPlayer=true"
               allow="autoplay *; fullscreen *; encrypted-media *"
               allowFullScreen
               frameBorder="0"
