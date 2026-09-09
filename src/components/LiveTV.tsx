@@ -42,14 +42,10 @@ const LiveTV = () => {
               alt="Live TV Background" 
               className="absolute inset-0 w-full h-full object-cover"
             />
-            {/* Iframe overlay */}
-            <iframe
-              className="absolute inset-0 w-full h-full z-10"
-              src="https://cdn.bamboo-cloud.com/api/embed?id=61efe2df06304441f316f923&uiconf_id=11709188&type=channel&iid=61efe2ac0630444d570f7b23&newPlayer=true"
-              allow="autoplay *; fullscreen *; encrypted-media *"
-              allowFullScreen
-              frameBorder="0"
-              title="BOC TV Live Stream"
+            {/* Bamboo player container (script embed) */}
+            <div
+              ref={playerRef}
+              className="absolute inset-0 w-full h-full z-10 [&_iframe]:w-full [&_iframe]:h-full [&_iframe]:absolute [&_iframe]:inset-0"
             />
           </div>
           <p className="mt-4 text-center text-sm text-muted-foreground">
