@@ -36,7 +36,20 @@ const LiveTV = () => {
               title="BOC TV Live Stream"
             />
           </div>
+          <p className="mt-4 text-center text-sm text-muted-foreground">
+            If the player does not start, the channel may be off air.{" "}
+            <a
+              href="https://www.youtube.com/@thebodyofchristTVke"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-medium underline"
+            >
+              Watch our latest programmes on YouTube
+            </a>
+            .
+          </p>
         </div>
+
       </div>
     </section>
   );
