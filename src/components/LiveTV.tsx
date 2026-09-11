@@ -1,23 +1,7 @@
-import { useEffect, useRef } from "react";
 import { Radio } from "lucide-react";
 import liveTvBg from "@/assets/live-tv-background.jpg";
 
 const LiveTV = () => {
-  const playerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const container = playerRef.current;
-    if (!container) return;
-    container.innerHTML = "";
-    const script = document.createElement("script");
-    script.src =
-      "https://cdn.bamboo-cloud.com/api/embed2?id=61efe2df06304441f316f923&uiconf_id=11706636&type=channel&newPlayer=true&iid=61efe2ac0630444d570f7b23";
-    script.async = false;
-    container.appendChild(script);
-    return () => {
-      container.innerHTML = "";
-    };
-  }, []);
   return (
     <section id="live" className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6">
@@ -42,10 +26,13 @@ const LiveTV = () => {
               alt="Live TV Background" 
               className="absolute inset-0 w-full h-full object-cover"
             />
-            {/* Bamboo player container (script embed) */}
-            <div
-              ref={playerRef}
-              className="absolute inset-0 w-full h-full z-10 [&_iframe]:w-full [&_iframe]:h-full [&_iframe]:absolute [&_iframe]:inset-0"
+            {/* Bamboo responsive iframe player */}
+            <iframe
+              src="https://cdn.bamboo-cloud.com/api/embed?id=61efe2df06304441f316f923&uiconf_id=11706636&type=channel&iid=61efe2ac0630444d570f7b23&newPlayer=true"
+              title="The Body of Christ TV live stream"
+              className="absolute inset-0 z-10 h-full w-full border-0"
+              allow="autoplay *; fullscreen *; encrypted-media *"
+              allowFullScreen
             />
           </div>
           <p className="mt-4 text-center text-sm text-muted-foreground">
