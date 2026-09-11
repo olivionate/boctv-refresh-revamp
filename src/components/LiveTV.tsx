@@ -31,7 +31,7 @@ const LiveTV = () => {
               src="https://cdn.bamboo-cloud.com/api/embed?id=61efe2df06304441f316f923&uiconf_id=11706636&type=channel&iid=61efe2ac0630444d570f7b23&newPlayer=true"
               title="The Body of Christ TV live stream"
               className="absolute inset-0 z-10 h-full w-full border-0"
-              allow="autoplay *; fullscreen *; encrypted-media *"
+              allow="autoplay; encrypted-media"
               allowFullScreen
             />
           </div>
