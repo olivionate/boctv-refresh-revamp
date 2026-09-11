@@ -11,7 +11,7 @@ const LiveTV = () => {
     container.innerHTML = "";
     const script = document.createElement("script");
     script.src =
-      "https://cdn.bamboo-cloud.com/api/embed2?id=61efe2df06304441f316f923&uiconf_id=11709188&type=channel&newPlayer=true&iid=61efe2ac0630444d570f7b23";
+      "https://cdn.bamboo-cloud.com/api/embed2?id=61efe2df06304441f316f923&uiconf_id=11706636&type=channel&newPlayer=true&iid=61efe2ac0630444d570f7b23";
     script.async = false;
     container.appendChild(script);
     return () => {
