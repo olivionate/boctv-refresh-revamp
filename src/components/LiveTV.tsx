@@ -33,8 +33,6 @@ const LiveTV = () => {
               className="absolute inset-0 z-10 h-full w-full border-0"
               allow="autoplay *; fullscreen *; encrypted-media *"
               allowFullScreen
-              mozAllowFullScreen
-              webkitAllowFullScreen
             />
           </div>
           <p className="mt-4 text-center text-sm text-muted-foreground">
