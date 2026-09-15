@@ -28,11 +28,13 @@ const LiveTV = () => {
             />
             {/* Bamboo responsive iframe player */}
             <iframe
-              src="https://cdn.bamboo-cloud.com/api/embed?id=61efe2df06304441f316f923&uiconf_id=11706636&type=channel&iid=61efe2ac0630444d570f7b23&newPlayer=true"
+              src="https://cdn.bamboo-cloud.com/api/embed?id=61efe2df06304441f316f923&uiconf_id=11709188&type=channel&iid=61efe2ac0630444d570f7b23&newPlayer=true"
               title="The Body of Christ TV live stream"
               className="absolute inset-0 z-10 h-full w-full border-0"
-              allow="autoplay; encrypted-media"
+              allow="autoplay *; fullscreen *; encrypted-media *"
               allowFullScreen
+              mozAllowFullScreen
+              webkitAllowFullScreen
             />
           </div>
           <p className="mt-4 text-center text-sm text-muted-foreground">
